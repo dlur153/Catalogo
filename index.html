@@ -981,6 +981,19 @@
       .acciones-compra .comprar { padding-right: 10px; padding-left: 10px; }
       .precio-boton { min-width: 76px; padding-right: 10px; padding-left: 10px; }
     }
+
+    /* Precios más grandes y legibles dentro de los botones. */
+    .acciones-compra .comprar {
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.15;
+      text-transform: none;
+    }
+    @media (max-width: 380px) {
+      .acciones-compra .comprar { font-size: 21px; }
+    }
 </style>
 </head>
 
@@ -1093,7 +1106,7 @@
           <h3>Mes de Cosecha</h3>
           <p class="descripcion-oferta">Disfruta nuestra botella de 750 ml a precio especial. Llévatela de $350 a solo $300. Válido del 1 al 15 de octubre.</p>
           <div class="precios-oferta"><del>$350</del></div>
-          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Promoción Mes de Cosecha · botella de 750 ml por $300">Comprar</button><span class="precio-boton">$300</span></div>
+          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Promoción Mes de Cosecha · botella de 750 ml por $300">$300</button></div>
         </div>
       </article>
       <article class="tarjeta-presentacion tarjeta-promocion">
@@ -1103,7 +1116,7 @@
           <h3>Pack Celebración Total</h3>
           <p class="descripcion-oferta">¡El combo definitivo para compartir! Llévate 2 botellas de 750 ml y te regalamos 1 botella de 250 ml.</p>
           <div class="precios-oferta"><del>$880</del></div>
-          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Pack Celebración Total · 2 botellas de 750 ml + 1 botella de 250 ml por $700">Comprar</button><span class="precio-boton">$700</span></div>
+          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Pack Celebración Total · 2 botellas de 750 ml + 1 botella de 250 ml por $700">$700</button></div>
         </div>
       </article>
       <article class="tarjeta-presentacion tarjeta-promocion">
@@ -1113,7 +1126,7 @@
           <h3>Dúo Perfecto</h3>
           <p class="descripcion-oferta">La combinación ideal para llevar a todos lados: 1 botella de 750 ml + 1 botella de 250 ml.</p>
           <div class="precios-oferta"><del>$530</del></div>
-          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Combo Dúo Perfecto · 1 botella de 750 ml + 1 botella de 250 ml por $450">Comprar</button><span class="precio-boton">$450</span></div>
+          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Combo Dúo Perfecto · 1 botella de 750 ml + 1 botella de 250 ml por $450">$450</button></div>
         </div>
       </article>
     </div>
@@ -1286,9 +1299,8 @@
                 <div class="acciones-compra">
                   <button class="comprar" type="button"
                     data-compra="${producto.nombre} · ${presentacion.tamano} · ${presentacion.precio}">
-                    Comprar
+                    ${presentacion.precio}
                   </button>
-                  <span class="precio-boton">${presentacion.precio}</span>
                 </div>
               </div>
             </article>
