@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#11100f">
+  <meta name="theme-color" content="#ffffff">
   <title>Destilados &amp; Licores</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -833,6 +833,154 @@
     object-fit: contain;
     object-position: center;
   }
+
+    /* Nueva paleta clara: blanco, azul petróleo, coral y acentos frescos. */
+    :root {
+      --fondo: #ffffff;
+      --panel: #ffffff;
+      --texto: #20313a;
+      --suave: #596a72;
+      --arena: #c75d4b;
+      --linea: #dce5e8;
+      --boton: #197b72;
+      --boton-hover: #26a092;
+      --oro-metalico: #bf573f;
+    }
+    body { background: #ffffff; color: var(--texto); font-weight: 400; }
+    .red-social { border-color: #dce5e8; color: #197b72; background: #f7fbfa; }
+    .red-social:hover, .red-social:focus-visible { border-color: #197b72; color: #155e58; }
+    .ayuda-link { color: #197b72; }
+    .sobrelinea { color: #197b72; font-weight: 700; -webkit-text-fill-color: currentColor; }
+    .encabezado h1 { background: none; color: #20313a; -webkit-text-fill-color: currentColor; }
+    .introduccion { color: #596a72; -webkit-text-fill-color: currentColor; }
+    .titulo-seccion h2, .encabezado-detalle h2 { color: #20313a; background: none; -webkit-text-fill-color: currentColor; }
+    .titulo-seccion .sobrelinea, .encabezado-detalle .sobrelinea { color: #c75d4b; -webkit-text-fill-color: currentColor; }
+    .tarjeta-producto, .tarjeta-presentacion, .tarjeta-promocion {
+      border: 1px solid #e1e9eb; border-radius: 14px; background: #ffffff; color: #20313a;
+      box-shadow: 0 8px 26px rgba(36, 67, 77, .08);
+    }
+    .tarjeta-producto { overflow: hidden; }
+    .tarjeta-producto:hover, .tarjeta-producto:focus-visible { border-color: #79b9af; box-shadow: 0 13px 30px rgba(36, 103, 96, .14); }
+    .ilustracion, .tarjeta-oferta .ilustracion, .ilustracion-oferta { background: #f2f8f7; }
+    .texto-tarjeta h3, .tarjeta-promocion .pie-presentacion h3 { color: #20313a; background: none; -webkit-text-fill-color: currentColor; }
+    .numero, .explorar { color: #197b72; background: none; -webkit-text-fill-color: currentColor; }
+    .texto-tarjeta p, .descripcion, .descripcion-oferta, .encabezado-detalle p { color: #596a72; -webkit-text-fill-color: currentColor; }
+    .explorar { border-color: #e1e9eb; }
+    .barra-detalle .volver { border-color: #cbdadd; border-radius: 8px; color: #197b72; background: #f7fbfa; }
+    .barra-detalle .volver:hover { border-color: #197b72; }
+    .tarjeta-presentacion { overflow: hidden; }
+    .marco-foto { background: #f5f8f8; }
+    .marco-foto .texto-foto { padding: 9px 12px; border-radius: 8px; background: rgba(255,255,255,.93); box-shadow: 0 2px 12px rgba(20,45,53,.12); text-shadow: none; }
+    .precio-foto { background: none !important; color: #c75d4b !important; -webkit-text-fill-color: currentColor !important; text-shadow: none; }
+    .pie-presentacion { background: #ffffff; }
+    .descripcion { border-color: #e2ebed; border-radius: 8px; background: #f8fbfb; }
+    .comprar, .comprar:hover, .comprar:focus-visible, .comprar:active {
+      border: 0; border-radius: 8px; background: #197b72; background-image: none; color: #ffffff; box-shadow: none; outline-color: #197b72;
+    }
+    .comprar:hover, .comprar:focus-visible { background: #145f59; transform: translateY(-1px); }
+    .comprar:active { background: #104e49; }
+    .tarjeta-oferta .ilustracion, .marco-oferta { background: #f4f8f8; border-color: #e1e9eb; }
+    .tarjeta-promocion .sobrelinea { color: #8a5cab; }
+    .precios-oferta del { color: #718087; }
+    .precios-oferta strong { color: #c75d4b; background: none; -webkit-text-fill-color: currentColor; }
+    .proximamente { border-color: #bd4c50; border-radius: 6px; background: rgba(255,255,255,.93); color: #a82f37; text-shadow: none; }
+    footer { border-color: #e1e9eb; color: #718087; }
+
+    /* Paleta elegante en blanco, azul profundo y gris pizarra. */
+    :root {
+      --fondo: #ffffff;
+      --panel: #ffffff;
+      --texto: #243746;
+      --suave: #5c6d79;
+      --arena: #315f7d;
+      --linea: #d9e1e7;
+      --boton: #1d4664;
+      --boton-hover: #285c7e;
+      --oro-metalico: linear-gradient(120deg, #183b56, #315f7d);
+    }
+    body { background: #fff; color: #243746; }
+    .red-social { border-color: #d9e1e7; color: #315f7d; background: #f7f9fb; }
+    .red-social:hover, .red-social:focus-visible { border-color: #315f7d; color: #183b56; }
+    .ayuda-link { color: #315f7d; }
+    .encabezado h1, .titulo-seccion h2, .encabezado-detalle h2,
+    .texto-tarjeta h3, .tarjeta-promocion .pie-presentacion h3 {
+      background: none; color: #183b56; -webkit-text-fill-color: currentColor;
+    }
+    .sobrelinea, .numero, .explorar, .tamano, .etiqueta-tamano {
+      background: none; color: #426a85; -webkit-text-fill-color: currentColor;
+    }
+    .introduccion, .texto-tarjeta p, .encabezado-detalle p,
+    .descripcion, .descripcion-oferta, .precios-oferta del { color: #5c6d79; -webkit-text-fill-color: currentColor; }
+    .titulo-seccion .sobrelinea, .encabezado-detalle .sobrelinea,
+    .tarjeta-promocion .sobrelinea { color: #607f95; -webkit-text-fill-color: currentColor; }
+    .tarjeta-producto, .tarjeta-presentacion, .tarjeta-promocion {
+      border: 1px solid #d9e1e7; border-radius: 12px; background: #fff; color: #243746;
+      box-shadow: 0 8px 24px rgba(24, 59, 86, .07);
+    }
+    .tarjeta-producto:hover, .tarjeta-producto:focus-visible {
+      border-color: #8da9bc; box-shadow: 0 12px 28px rgba(24, 59, 86, .12);
+    }
+    .ilustracion, .tarjeta-oferta .ilustracion, .ilustracion-oferta,
+    .marco-oferta, .marco-foto { background: #f1f4f6; }
+    .explorar { border-color: #d9e1e7; }
+    .barra-detalle .volver { border-color: #cbd6de; border-radius: 7px; color: #1d4664; background: #f7f9fb; }
+    .barra-detalle .volver:hover { border-color: #426a85; }
+    .marco-foto .texto-foto {
+      padding: 9px 12px; border: 1px solid rgba(217,225,231,.9); border-radius: 7px;
+      background: rgba(255,255,255,.95); box-shadow: 0 2px 12px rgba(24,59,86,.12); text-shadow: none;
+    }
+    .precio, .precio-foto, .precios-oferta strong {
+      background: none !important; color: #1d4664 !important; -webkit-text-fill-color: currentColor !important; text-shadow: none;
+    }
+    .pie-presentacion { background: #fff; }
+    .descripcion { border-color: #dfe6eb; border-radius: 7px; background: #f7f9fb; }
+    .comprar, .comprar:hover, .comprar:focus-visible, .comprar:active {
+      border: 0; border-radius: 7px; background: #1d4664; background-image: none;
+      color: #fff; box-shadow: none; outline-color: #426a85;
+    }
+    .comprar:hover, .comprar:focus-visible { background: #285c7e; transform: translateY(-1px); }
+    .comprar:active { background: #183b56; }
+    .tarjeta-promocion .pie-presentacion h3 { color: #183b56; }
+    .precios-oferta del { color: #71808a; }
+    .proximamente { border-color: #8c454a; border-radius: 5px; background: rgba(255,255,255,.95); color: #8c454a; text-shadow: none; }
+    footer { border-color: #d9e1e7; color: #71808a; }
+
+    /* Precio y botón juntos en una sola fila. */
+    .acciones-compra {
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+      width: 100%;
+      margin-top: 14px;
+    }
+    .acciones-compra .comprar {
+      width: auto;
+      min-width: 0;
+      flex: 1 1 auto;
+      padding: 12px 16px;
+    }
+    .acciones-compra .boton-oferta { width: auto; }
+    .precio-boton {
+      display: flex;
+      flex: 0 0 auto;
+      min-width: 88px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border-radius: 7px;
+      background: #1d4664;
+      color: #fff;
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 18px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .precios-oferta { margin: 0; }
+    @media (max-width: 380px) {
+      .acciones-compra { gap: 6px; }
+      .acciones-compra .comprar { padding-right: 10px; padding-left: 10px; }
+      .precio-boton { min-width: 76px; padding-right: 10px; padding-left: 10px; }
+    }
 </style>
 </head>
 
@@ -944,8 +1092,8 @@
           <span class="sobrelinea">Especial de temporada · Promo octubre</span>
           <h3>Mes de Cosecha</h3>
           <p class="descripcion-oferta">Disfruta nuestra botella de 750 ml a precio especial. Llévatela de $350 a solo $300. Válido del 1 al 15 de octubre.</p>
-          <div class="precios-oferta"><del>$350</del><strong>$300</strong></div>
-          <button class="comprar boton-oferta" type="button" data-compra="Promoción Mes de Cosecha · botella de 750 ml por $300">Comprar</button>
+          <div class="precios-oferta"><del>$350</del></div>
+          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Promoción Mes de Cosecha · botella de 750 ml por $300">Comprar</button><span class="precio-boton">$300</span></div>
         </div>
       </article>
       <article class="tarjeta-presentacion tarjeta-promocion">
@@ -954,8 +1102,8 @@
           <span class="sobrelinea">2 botellas grandes + 1 chica</span>
           <h3>Pack Celebración Total</h3>
           <p class="descripcion-oferta">¡El combo definitivo para compartir! Llévate 2 botellas de 750 ml y te regalamos 1 botella de 250 ml.</p>
-          <div class="precios-oferta"><del>$880</del><strong>$700</strong></div>
-          <button class="comprar boton-oferta" type="button" data-compra="Pack Celebración Total · 2 botellas de 750 ml + 1 botella de 250 ml por $700">Comprar</button>
+          <div class="precios-oferta"><del>$880</del></div>
+          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Pack Celebración Total · 2 botellas de 750 ml + 1 botella de 250 ml por $700">Comprar</button><span class="precio-boton">$700</span></div>
         </div>
       </article>
       <article class="tarjeta-presentacion tarjeta-promocion">
@@ -964,8 +1112,8 @@
           <span class="sobrelinea">1 botella grande + 1 chica</span>
           <h3>Dúo Perfecto</h3>
           <p class="descripcion-oferta">La combinación ideal para llevar a todos lados: 1 botella de 750 ml + 1 botella de 250 ml.</p>
-          <div class="precios-oferta"><del>$530</del><strong>$450</strong></div>
-          <button class="comprar boton-oferta" type="button" data-compra="Combo Dúo Perfecto · 1 botella de 750 ml + 1 botella de 250 ml por $450">Comprar</button>
+          <div class="precios-oferta"><del>$530</del></div>
+          <div class="acciones-compra"><button class="comprar boton-oferta" type="button" data-compra="Combo Dúo Perfecto · 1 botella de 750 ml + 1 botella de 250 ml por $450">Comprar</button><span class="precio-boton">$450</span></div>
         </div>
       </article>
     </div>
