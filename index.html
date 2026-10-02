@@ -1279,18 +1279,17 @@
                 ${id === "jamaica" || id === "tamarindo" ? '<span class="proximamente" role="status">PRÓXIMAMENTE</span>' : ""}
                 ${producto.imagen ? `<img class="foto-producto" src="${presentacion.tamano === "750 ml" && producto.imagen750 ? producto.imagen750 : producto.imagen}" alt="${producto.nombre} ${presentacion.tamano}">` : ""}
 
-                <span class="texto-foto">
-                  
-                  <span class="precio-foto">${presentacion.precio}</span>
-                </span>
               </div>
 
               <div class="pie-presentacion">
                 <p class="descripcion">${presentacion.descripcion}</p>
-                <button class="comprar" type="button"
-                  data-compra="${producto.nombre} · ${presentacion.tamano} · ${presentacion.precio}">
-                  Comprar
-                </button>
+                <div class="acciones-compra">
+                  <button class="comprar" type="button"
+                    data-compra="${producto.nombre} · ${presentacion.tamano} · ${presentacion.precio}">
+                    Comprar
+                  </button>
+                  <span class="precio-boton">${presentacion.precio}</span>
+                </div>
               </div>
             </article>
           `;
