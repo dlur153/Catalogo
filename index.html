@@ -1022,7 +1022,56 @@
       border-color: #d01850;
       box-shadow: 0 0 0 2px rgba(177, 15, 67, .25), 0 13px 30px rgba(177, 15, 67, .25);
     }
-    </style>
+    
+    /* Bordes vivos por producto en las tarjetas principales */
+    .tarjeta-producto[data-producto="datil"] {
+      border: 3px solid #f0a900;
+      box-shadow: 0 0 0 1px rgba(240, 169, 0, .35), 0 8px 24px rgba(240, 169, 0, .2);
+    }
+    .tarjeta-producto[data-producto="datil"]:hover,
+    .tarjeta-producto[data-producto="datil"]:focus-visible {
+      border-color: #ffc928;
+      box-shadow: 0 0 0 3px rgba(240, 169, 0, .3), 0 13px 30px rgba(240, 169, 0, .3);
+    }
+
+    .tarjeta-producto[data-producto="jamaica"] {
+      border: 3px solid #d92778;
+      box-shadow: 0 0 0 1px rgba(217, 39, 120, .35), 0 8px 24px rgba(217, 39, 120, .2);
+    }
+    .tarjeta-producto[data-producto="jamaica"]:hover,
+    .tarjeta-producto[data-producto="jamaica"]:focus-visible {
+      border-color: #f34a9a;
+      box-shadow: 0 0 0 3px rgba(217, 39, 120, .3), 0 13px 30px rgba(217, 39, 120, .3);
+    }
+
+    .tarjeta-producto[data-producto="tamarindo"] {
+      border: 3px solid #ed681c;
+      box-shadow: 0 0 0 1px rgba(237, 104, 28, .35), 0 8px 24px rgba(237, 104, 28, .2);
+    }
+    .tarjeta-producto[data-producto="tamarindo"]:hover,
+    .tarjeta-producto[data-producto="tamarindo"]:focus-visible {
+      border-color: #ff8736;
+      box-shadow: 0 0 0 3px rgba(237, 104, 28, .3), 0 13px 30px rgba(237, 104, 28, .3);
+    }
+
+    #abrir-ofertas.tarjeta-producto {
+      border: 3px solid #7652e8;
+      box-shadow: 0 0 0 1px rgba(118, 82, 232, .35), 0 8px 24px rgba(118, 82, 232, .2);
+    }
+    #abrir-ofertas.tarjeta-producto:hover,
+    #abrir-ofertas.tarjeta-producto:focus-visible {
+      border-color: #987bff;
+      box-shadow: 0 0 0 3px rgba(118, 82, 232, .3), 0 13px 30px rgba(118, 82, 232, .3);
+    }
+    .tarjeta-producto:focus-visible {
+      outline: 3px solid currentColor;
+      outline-offset: 4px;
+    }
+    .tarjeta-producto[data-producto="datil"]:focus-visible { outline-color: #ffc928; }
+    .tarjeta-producto[data-producto="jamaica"]:focus-visible { outline-color: #f34a9a; }
+    .tarjeta-producto[data-producto="tamarindo"]:focus-visible { outline-color: #ff8736; }
+    #abrir-ofertas.tarjeta-producto:focus-visible { outline-color: #987bff; }
+  </style>
 </head>
 
 <body>
